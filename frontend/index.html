@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure File Upload</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔒 Secure File Upload</h1>
+            <p class="subtitle">Upload files securely with automatic malware scanning</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <svg class="upload-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    <h2>Drop files here or click to upload</h2>
+                    <p>Maximum file size: 50MB</p>
+                    <p class="allowed-types">Allowed: Images (JPG, PNG, GIF), PDF, Word documents, ZIP</p>
+                    <input type="file" id="fileInput" multiple accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.zip">
+                </div>
+            </div>
+
+            <div id="fileList" class="file-list"></div>
+
+            <div class="info-section">
+                <h3>Security Features</h3>
+                <ul class="features-list">
+                    <li>✓ End-to-end encryption with AWS KMS</li>
+                    <li>✓ Automatic malware scanning with ClamAV</li>
+                    <li>✓ Secure direct-to-S3 uploads</li>
+                    <li>✓ File type and size validation</li>
+                    <li>✓ Automatic quarantine of suspicious files</li>
+                    <li>✓ Complete audit trail</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by AWS • Built with Terraform</p>
+        </footer>
+    </div>
+
+    <script src="upload.js"></script>
+</body>
+</html>

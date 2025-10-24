@@ -1,0 +1,42 @@
+# Example Terraform Variables
+# Copy this file to terraform.tfvars and update with your values
+
+aws_region   = "us-east-1"
+project_name = "secure-file-upload"
+environment  = "prod"
+owner        = "DevOps Team"
+
+# Security Alerts
+alert_email = "security@yourcompany.com"
+
+# File Upload Configuration
+allowed_file_types = [
+  "image/jpeg",
+  "image/png",
+  "image/gif",
+  "application/pdf",
+  "application/msword",
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "application/zip"
+]
+max_file_size_mb         = 50
+presigned_url_expiration = 900 # 15 minutes
+
+# Lambda Configuration
+lambda_timeout     = 300  # 5 minutes for scanner
+lambda_memory_size = 2048 # 2GB for ClamAV
+
+# Feature Flags
+enable_waf        = true
+enable_cloudfront = true
+enable_vpc        = true
+
+# VPC Configuration
+vpc_cidr = "10.0.0.0/16"
+
+# Storage Configuration
+enable_s3_versioning = true
+s3_lifecycle_days    = 30
+
+# Logging
+log_retention_days = 30
