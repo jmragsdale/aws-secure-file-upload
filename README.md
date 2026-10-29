@@ -1,4 +1,53 @@
-# AWS Secure File Upload System with Malware Scanning
+<a id="aws-secure-file-upload-system-with-malware-scanning"></a>
+
+<a href="#setup-guide">
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/assets/readme/header-mobile.png">
+  <img src="docs/assets/readme/header.png" width="1440" alt="AWS Secure File Upload. An AWS file-upload reference using S3, Lambda and ClamAV, with application source, deployment documentation and security notes.">
+</picture>
+</a>
+
+<p>
+  <a href="#setup-guide"><strong>Start here ↗</strong></a> &nbsp; / &nbsp;
+  <a href="lambda-functions/malware-scanner/scanner.py">Source</a> &nbsp; / &nbsp;
+  <a href="#project-guide">Project guide</a> &nbsp; / &nbsp;
+  <a href="https://github.com/jmragsdale">Profile</a>
+</p>
+
+An AWS file-upload reference using S3, Lambda and ClamAV, with application source, deployment documentation and security notes.
+
+## Explore the project
+
+Open a card for source, examples or supporting documentation.
+
+<p>
+<a href="QUICKSTART.md">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/setup-dark.png">
+  <img src="docs/assets/readme/setup-light.png" width="360" alt="Read the quick-start guide. Review prerequisites and the documented deployment workflow.">
+</picture>
+</a>
+<a href="lambda-functions/malware-scanner/scanner.py">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/source-dark.png">
+  <img src="docs/assets/readme/source-light.png" width="360" alt="Inspect the scanner source. Read the file-scanning handler and processing decisions.">
+</picture>
+</a>
+<a href="docs/SECURITY.md">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/security-dark.png">
+  <img src="docs/assets/readme/security-light.png" width="360" alt="Review security notes. Read the documented security design and operating considerations.">
+</picture>
+</a>
+<a href="docs/API.md">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/api-dark.png">
+  <img src="docs/assets/readme/api-light.png" width="360" alt="Inspect the API guide. Review documented request flows and API usage details.">
+</picture>
+</a>
+</p>
+
+## Project guide
 
 A serverless, cloud-native secure file upload system built on AWS that automatically scans uploaded files for malware before storing them. This project demonstrates AWS security best practices including encryption, least privilege access, malware detection, and comprehensive audit logging.
 
@@ -90,6 +139,8 @@ All activity logged to:
 - Python 3.9+
 - Git
 
+<a id="setup-guide"></a>
+
 ## 🚀 Deployment
 
 ### Step 1: Clone and Configure
@@ -139,6 +190,9 @@ aws s3 sync ../frontend s3://$(terraform output -raw website_bucket_name)
 
 ## 📁 Project Structure
 
+<details>
+<summary>Architecture flow (text)</summary>
+
 ```
 aws-secure-file-upload/
 ├── README.md
@@ -184,6 +238,8 @@ aws-secure-file-upload/
     ├── SECURITY.md
     └── TROUBLESHOOTING.md
 ```
+
+</details>
 
 ## 🔧 Configuration Options
 
@@ -350,3 +406,10 @@ Your Name - [GitHub](https://github.com/jmragsdale)
 - ClamAV open-source antivirus engine
 - AWS Security Best Practices documentation
 - Terraform AWS modules community
+
+<details>
+<summary>README visual assets</summary>
+
+[Artwork sources and regeneration notes](docs/assets/readme/README.md).
+
+</details>

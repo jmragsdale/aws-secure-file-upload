@@ -1,0 +1,77 @@
+{
+  "title": "AWS Secure File Upload",
+  "titleFontSize": 86,
+  "mobileTitle": [
+    "AWS secure",
+    "file upload"
+  ],
+  "eyebrow": "FILE-HANDLING SECURITY",
+  "tagline": "Upload, inspect and route files.",
+  "mobileTagline": [
+    "Upload, inspect",
+    "and route files."
+  ],
+  "description": [
+    "A reference upload workflow using S3, Lambda and ClamAV.",
+    "Application source, deployment notes and security guidance."
+  ],
+  "mobileDescription": [
+    "S3, Lambda and ClamAV upload processing.",
+    "Source, deployment notes and security guidance."
+  ],
+  "footerLeft": "PYTHON",
+  "footerMiddle": "AWS / S3 / LAMBDA",
+  "footerRight": "UPLOAD / SCAN / ROUTE",
+  "diagram": [
+    "UPLOAD",
+    "SCAN",
+    "ROUTE"
+  ],
+  "summary": "An AWS file-upload reference using S3, Lambda and ClamAV, with application source, deployment documentation and security notes.",
+  "cards": [
+    {
+      "slug": "setup",
+      "category": "GET STARTED",
+      "title": "Read the quick-start guide",
+      "lines": [
+        "Review prerequisites and the",
+        "documented deployment workflow."
+      ],
+      "footer": "SETUP / DEPLOYMENT NOTES",
+      "href": "QUICKSTART.md"
+    },
+    {
+      "slug": "source",
+      "category": "IMPLEMENTATION",
+      "title": "Inspect the scanner source",
+      "lines": [
+        "Read the file-scanning handler",
+        "and processing decisions."
+      ],
+      "footer": "SOURCE / REFERENCE CODE",
+      "href": "lambda-functions/malware-scanner/scanner.py"
+    },
+    {
+      "slug": "security",
+      "category": "SECURITY GUIDANCE",
+      "title": "Review security notes",
+      "lines": [
+        "Read the documented security",
+        "design and operating considerations."
+      ],
+      "footer": "DESIGN / SECURITY NOTES",
+      "href": "docs/SECURITY.md"
+    },
+    {
+      "slug": "api",
+      "category": "APPLICATION INTERFACE",
+      "title": "Inspect the API guide",
+      "lines": [
+        "Review documented request flows",
+        "and API usage details."
+      ],
+      "footer": "API / REFERENCE DOCUMENTATION",
+      "href": "docs/API.md"
+    }
+  ]
+}
